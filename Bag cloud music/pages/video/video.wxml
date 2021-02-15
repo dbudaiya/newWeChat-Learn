@@ -1,0 +1,15 @@
+<!-- 视频中心 -->
+<view class="container" hover-class="none" hover-stop-propagation="false">
+  <view class="header">
+    <image class="" src="/static/images/video/video.jpg" lazy-load="true"></image>
+    <view class="search">音乐播放中心</view>
+    <image class="" src="/static/images/logo.png" lazy-load="true"></image>
+  </view>
+  <scroll-view scroll-x class="nav-scroll" enable-flex>
+    <view class="navItem" wx:for="{{VideoGroupList}}" wx:key="id">
+      <view class="navContainer {{budai === item.id? 'active':''}}" bindtap="changeNav" id="{{item.id}}">
+        {{item.name}}
+      </view>
+    </view>
+  </scroll-view>
+</view>
