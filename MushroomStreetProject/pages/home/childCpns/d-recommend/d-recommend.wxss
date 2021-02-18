@@ -1,0 +1,19 @@
+/* pages/home/childCpns/d-recommend/d-recommend.wxss */
+.recommend{
+  display: flex;
+  padding: 28rpx 0;
+  border-bottom: 16rpx solid #eee;
+}
+.recommend-view{
+  flex: 1;
+  text-align: center
+}
+
+.recommend-view image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.recommend-view .title{
+  display: block;
+  font-size: 30rpx;
+}

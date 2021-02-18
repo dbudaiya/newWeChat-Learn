@@ -1,0 +1,26 @@
+<!-- 1.展示轮播图 -->
+<d-swiper banners="{{banners}}" />
+
+<!-- 2.推荐数据的展示  -->
+<d-recommend recommends="{{recommends}}"/>
+
+<!-- 3.展示本周流行 -->
+<view class="poplure">
+<image src="/assets/home/popular_bg.jpg" mode="widthFix" />
+</view>
+
+<!-- 4. 列表栏 -->
+<w-tab-control titles="{{titles}}" bind:tabclick="btnClick"/>
+
+<!-- 5. 展示商品数据 -->
+<view class="goods">
+  <block wx:for="{{goods[currentType].list}}" wx:key="index">
+     <view wx:for="{{item}}" wx:key="index">
+    
+     </view> 
+  </block>
+</view>
+
+<scroll-view>
+
+</scroll-view>

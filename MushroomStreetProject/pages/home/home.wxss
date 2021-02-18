@@ -1,0 +1,5 @@
+/* pages/home/home.wxss */
+/* 展示本周流行 */
+.poplure image{
+  width:100%
+}
